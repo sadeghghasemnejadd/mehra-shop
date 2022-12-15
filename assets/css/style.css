@@ -3,6 +3,22 @@
   --color-gray: #ebebeb;
 }
 
+@font-face {
+  font-family: "lato-regular";
+  src: url("./../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "lato-bold";
+  src: url("./../fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "b-traffic-regular";
+  src: url("./../fonts/B-Traffic.ttf");
+}
+@font-face {
+  font-family: "b-traffic-bold";
+  src: url("./../fonts/B-Traffic.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +27,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: lato-regular;
 }
 
 body {
@@ -50,6 +66,7 @@ body {
   border-radius: 50%;
   color: #fff;
   font-size: 1rem;
+  font-family: b-traffic-regular;
   display: flex;
   justify-content: center;
   align-items: center;

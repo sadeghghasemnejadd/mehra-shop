@@ -2,14 +2,7 @@
   --color-primary: #849d6a;
   --color-gray: #ebebeb;
 }
-@font-face {
-  font-family: "lato-regular";
-  src: url("./../fonts/Lato-Regular.ttf");
-}
-@font-face {
-  font-family: "lato-bold";
-  src: url("./../fonts/Lato-Bold.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @font-face {
   font-family: "b-traffic-regular";
   src: url("./../fonts/B-Traffic.ttf");
@@ -25,7 +18,7 @@
 }
 html {
   font-size: 62.5%;
-  font-family: lato-regular;
+  font-family: "Lato", sans-serif;
 }
 body {
   font-size: 1.6rem;
@@ -50,6 +43,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
     &--cart,
     &--heart {
@@ -86,6 +80,8 @@ body {
       align-items: center;
       gap: 1.6rem;
       padding: 0 2.4rem;
+      font-family: "Lato";
+      font-weight: 700;
       &::after {
         content: "";
         width: 0.1rem;

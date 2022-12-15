@@ -86,6 +86,9 @@ body {
   font-family: "Lato";
   font-weight: 700;
 }
+.header__search--label svg {
+  width: 1rem;
+}
 .header__search--label::after {
   content: "";
   width: 0.1rem;
@@ -104,6 +107,76 @@ body {
   border: none;
   background-color: var(--color-primary);
   cursor: pointer;
+}
+.header__search--btn svg {
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 3rem;
+  height: 100vh;
+}
+.hero__aside {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  width: 30rem;
+}
+.hero__aside--header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  gap: 2.4rem;
+  background-color: var(--color-primary);
+  padding: 1.6rem;
+  align-items: center;
+  font-family: "Lato";
+  font-weight: 700;
+  color: #fff;
+}
+.hero__aside--header-menu {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #fff;
+  position: relative;
+}
+.hero__aside--header-menu::after, .hero__aside--header-menu::before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+}
+.hero__aside--header-menu::after {
+  top: -0.8rem;
+}
+.hero__aside--header-menu::before {
+  bottom: -0.8rem;
+}
+.hero__aside--header-icon {
+  margin-right: auto;
+  fill: #fff;
+  width: 0.8rem;
+}
+.hero__aside--lists {
+  width: 100%;
+  height: 5rem;
+  list-style: none;
+}
+.hero__nav {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  background-color: red;
+  height: 20rem;
+}
+.hero__image {
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

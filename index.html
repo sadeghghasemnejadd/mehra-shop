@@ -16,31 +16,67 @@
       />
       <form class="header__search">
         <label class="header__search--label"
-          >همه دسته بندی ها<img src="./assets/images/Chevron.png" alt="Chevron"
-        /></label>
+          >همه دسته بندی ها<svg>
+            <use xlink:href="./assets/images/sprite.svg#chevron"></use></svg
+        ></label>
         <input
           type="text"
           class="header__search--input"
           placeholder="کالای مورد نظر خود را جستجو کنید"
         />
         <button class="header__search--btn">
-          <img src="./assets/images/search.svg" alt="search" />
+          <svg class="hero__aside--header-icon">
+            <use xlink:href="./assets/images/sprite.svg#search"></use>
+          </svg>
         </button>
       </form>
 
       <div class="header__icons">
         <div class="header__icons--user">
-          <img src="./assets/images/user.svg" alt="user" />
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#user"></use>
+          </svg>
         </div>
         <div class="header__icons--heart">
-          <img src="./assets/images/heart.svg" alt="heart" />
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#heart"></use>
+          </svg>
         </div>
         <div class="header__icons--cart">
-          <img src="./assets/images/cart.svg" alt="shopping-cart" />
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#cart"></use>
+          </svg>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <aside class="hero__aside">
+          <div class="hero__aside--header">
+            <div class="hero__aside--header-menu"></div>
+            <p class="hero__aside--header-text">دسته بندی ها</p>
+            <svg class="hero__aside--header-icon">
+              <use xlink:href="./assets/images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <ul class="hero__aside--lists">
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+            <li class="hero__aside--lists-item"><a href="#"></a></li>
+          </ul>
+        </aside>
+        <nav class="hero__nav"></nav>
+        <div class="hero__image"></div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -82,6 +82,9 @@ body {
       padding: 0 2.4rem;
       font-family: "Lato";
       font-weight: 700;
+      & svg {
+        width: 1rem;
+      }
       &::after {
         content: "";
         width: 0.1rem;
@@ -101,6 +104,77 @@ body {
       border: none;
       background-color: var(--color-primary);
       cursor: pointer;
+      & svg {
+        fill: #fff;
+        width: 2rem;
+        height: 2rem;
+      }
     }
+  }
+}
+.hero {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 3rem;
+  height: 100vh;
+  &__aside {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    // background-color: #849d6a;
+    width: 30rem;
+    &--header {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      gap: 2.4rem;
+      background-color: var(--color-primary);
+      padding: 1.6rem;
+      align-items: center;
+      font-family: "Lato";
+      font-weight: 700;
+      color: #fff;
+      &-menu {
+        width: 2rem;
+        height: 0.1rem;
+        background-color: #fff;
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          width: 120%;
+          height: 100%;
+          background-color: #fff;
+          position: absolute;
+        }
+        &::after {
+          top: -0.8rem;
+        }
+        &::before {
+          bottom: -0.8rem;
+        }
+      }
+      &-icon {
+        margin-right: auto;
+        fill: #fff;
+        width: 0.8rem;
+      }
+    }
+    &--lists {
+      width: 100%;
+      height: 5rem;
+      list-style: none;
+    }
+  }
+  &__nav {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    background-color: red;
+    height: 20rem;
+  }
+  &__image {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    background-color: black;
   }
 }

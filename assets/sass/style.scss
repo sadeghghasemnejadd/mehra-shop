@@ -31,8 +31,15 @@ html {
 }
 body {
   font-size: 1.6rem;
+}
+.container {
   width: 95vw;
   margin: 0 auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 9.5rem;
 }
 .header {
   display: grid;
@@ -382,6 +389,37 @@ body {
       &-title {
         font-size: 2.5rem;
         width: 45%;
+      }
+    }
+  }
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--icons {
+      position: relative;
+      &-bg {
+        width: 8.5rem;
+        height: 8.5rem;
+        background-color: #b04d50;
+        border-radius: 50%;
+        opacity: 0.1;
+        position: absolute;
+      }
+      &-icon {
+        margin-right: 4rem;
+      }
+    }
+    &--content {
+      width: 63%;
+      &-text {
+        font-size: 1.3rem;
+        color: #4f4f4f;
       }
     }
   }

@@ -45,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 9.5rem;
+  margin-bottom: 9.5rem;
 }
 
 .header {
@@ -638,6 +639,133 @@ body {
 .statistic__item--count {
   font-size: 3rem;
   font-family: iransans-bold;
+}
+
+.footer {
+  width: 100%;
+  height: 94.6rem;
+  background: url("./../images/footer.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.4rem;
+  padding-bottom: 3.2rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  color: #fff;
+}
+.newsletter__icon {
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+}
+.newsletter__title {
+  font-size: 2.4rem;
+}
+.newsletter__text {
+  font-size: 1.4rem;
+}
+.newsletter__form {
+  width: 63rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+.newsletter__form--input {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+}
+.newsletter__form--button {
+  margin-right: -16rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  color: #fff;
+}
+.content__info--logo {
+  width: 12.6rem;
+  height: 6rem;
+}
+.content__info--title {
+  font-size: 1.4rem;
+  text-align: right;
+}
+.content__info--socials {
+  display: flex;
+  gap: 2.4rem;
+}
+.content__info--socials-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #fff;
+}
+.content__contact {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.content__contact--title {
+  font-size: 1.8rem;
+}
+.content__contact--phone, .content__contact--time, .content__contact--email {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.content__contact--phone svg, .content__contact--time svg, .content__contact--email svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff;
+}
+.content__links {
+  color: #fff;
+}
+.content__links--title {
+  font-size: 1.8rem;
+}
+.content__links--lists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 1.6rem;
+}
+.content__links--lists-item a:link, .content__links--lists-item a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.content__logos {
+  align-self: center;
+}
+
+.copyright {
+  width: 100%;
+  padding: 0 20rem;
+  padding-top: 3.2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
 }
 
 .heading-primary {

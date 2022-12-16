@@ -29,6 +29,24 @@
 html {
   font-size: 62.5%;
   font-family: iransans;
+  @media only screen and (max-width: 103.125em) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: 88.4375em) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: 79em) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: 74em) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: 65em) {
+    font-size: 35%;
+  }
+  @media only screen and (max-width: 57em) {
+    font-size: 30%;
+  }
 }
 body {
   font-size: 1.6rem;
@@ -133,6 +151,10 @@ body {
       }
     }
   }
+  &__logo {
+    width: 12.6rem;
+    height: 6rem;
+  }
 }
 .hero {
   display: grid;
@@ -141,6 +163,9 @@ body {
   column-gap: 3rem;
   row-gap: 1.5rem;
   position: relative;
+  @media only screen and (max-width: 50em) {
+    grid-template-rows: 5rem repeat(3, max-content);
+  }
   &::before {
     content: "";
     width: 100%;
@@ -230,6 +255,9 @@ body {
         }
       }
     }
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
   }
   &__nav {
     grid-column: 2/-1;
@@ -279,16 +307,22 @@ body {
         height: 2rem;
       }
     }
+    @media only screen and (max-width: 50em) {
+      grid-column: 1/-1;
+      // grid-row: 2/3;
+    }
   }
   &__image {
     grid-column: 2/-1;
     grid-row: 2/3;
     height: 100%;
     background: url("./../images/hero-image.png");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     align-items: center;
+    padding: 6.4rem;
     &--icons {
       width: 4.5rem;
       height: 4.5rem;
@@ -337,6 +371,10 @@ body {
         margin-bottom: 3.2rem;
       }
     }
+    @media only screen and (max-width: 50em) {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+    }
   }
   &__ads {
     display: flex;
@@ -344,6 +382,9 @@ body {
     grid-row: 3/-1;
     grid-column: 1/-1;
     height: 100%;
+    @media only screen and (max-width: 50em) {
+      flex-wrap: wrap;
+    }
     &--item {
       width: 58rem;
       padding: 0 3.2rem;
@@ -351,6 +392,11 @@ body {
       flex-direction: column;
       justify-content: center;
       gap: 2.4rem;
+      @media only screen and (max-width: 50em) {
+        min-width: 55rem;
+        flex: 1;
+        height: 100%;
+      }
       &-1 {
         background: url("./../images/ads-1.png");
         background-size: cover;
@@ -398,6 +444,9 @@ body {
 .features {
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 50em) {
+    margin-top: 30rem;
+  }
   &__item {
     width: 35rem;
     display: flex;
@@ -415,6 +464,8 @@ body {
       }
       &-icon {
         margin-right: 4rem;
+        width: 7rem;
+        height: 7rem;
       }
     }
     &--content {
@@ -467,6 +518,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 3.6rem;
+    @media only screen and (max-width: 50em) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3.2rem;
+      height: auto;
+    }
     &--notif {
       position: absolute;
       top: 0;
@@ -548,6 +606,10 @@ body {
             }
           }
         }
+        &-image {
+          width: 20rem;
+          height: 20rem;
+        }
       }
       &-price {
         font-family: b-traffic-bold;
@@ -577,6 +639,7 @@ body {
         border-radius: 0.4rem;
         border: none;
         font-family: iransans-bold;
+        font-size: 1.3rem;
         cursor: pointer;
         & svg {
           width: 1.8rem;
@@ -771,6 +834,10 @@ body {
   }
   &__logos {
     align-self: center;
+    & img {
+      width: 11.5rem;
+      height: 11.5rem;
+    }
   }
 }
 .copyright {
@@ -806,6 +873,7 @@ body {
   border: none;
   font-weight: 700;
   cursor: pointer;
+  font-size: 1.3rem;
 }
 .main-button-dark {
   background-color: var(--color-primary-dark);

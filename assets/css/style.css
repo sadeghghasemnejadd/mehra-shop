@@ -31,6 +31,36 @@ html {
   font-size: 62.5%;
   font-family: iransans;
 }
+@media only screen and (max-width: 103.125em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 88.4375em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 79em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media only screen and (max-width: 74em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 65em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media only screen and (max-width: 57em) {
+  html {
+    font-size: 30%;
+  }
+}
 
 body {
   font-size: 1.6rem;
@@ -136,6 +166,10 @@ body {
   width: 2rem;
   height: 2rem;
 }
+.header__logo {
+  width: 12.6rem;
+  height: 6rem;
+}
 
 .hero {
   display: grid;
@@ -144,6 +178,11 @@ body {
   column-gap: 3rem;
   row-gap: 1.5rem;
   position: relative;
+}
+@media only screen and (max-width: 50em) {
+  .hero {
+    grid-template-rows: 5rem repeat(3, max-content);
+  }
 }
 .hero::before {
   content: "";
@@ -230,6 +269,11 @@ body {
 .hero__aside--lists-item-active svg {
   fill: var(--color-primary);
 }
+@media only screen and (max-width: 50em) {
+  .hero__aside {
+    display: none;
+  }
+}
 .hero__nav {
   grid-column: 2/-1;
   grid-row: 1/2;
@@ -274,15 +318,22 @@ body {
   width: 2rem;
   height: 2rem;
 }
+@media only screen and (max-width: 50em) {
+  .hero__nav {
+    grid-column: 1/-1;
+  }
+}
 .hero__image {
   grid-column: 2/-1;
   grid-row: 2/3;
   height: 100%;
   background: url("./../images/hero-image.png");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
+  padding: 6.4rem;
 }
 .hero__image--icons {
   width: 4.5rem;
@@ -331,12 +382,23 @@ body {
   width: 52%;
   margin-bottom: 3.2rem;
 }
+@media only screen and (max-width: 50em) {
+  .hero__image {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
 .hero__ads {
   display: flex;
   justify-content: space-between;
   grid-row: 3/-1;
   grid-column: 1/-1;
   height: 100%;
+}
+@media only screen and (max-width: 50em) {
+  .hero__ads {
+    flex-wrap: wrap;
+  }
 }
 .hero__ads--item {
   width: 58rem;
@@ -345,6 +407,13 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 2.4rem;
+}
+@media only screen and (max-width: 50em) {
+  .hero__ads--item {
+    min-width: 55rem;
+    flex: 1;
+    height: 100%;
+  }
 }
 .hero__ads--item-1 {
   background: url("./../images/ads-1.png");
@@ -391,6 +460,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 50em) {
+  .features {
+    margin-top: 30rem;
+  }
+}
 .features__item {
   width: 35rem;
   display: flex;
@@ -410,6 +484,8 @@ body {
 }
 .features__item--icons-icon {
   margin-right: 4rem;
+  width: 7rem;
+  height: 7rem;
 }
 .features__item--content {
   width: 63%;
@@ -458,6 +534,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 3.6rem;
+}
+@media only screen and (max-width: 50em) {
+  .sales__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    height: auto;
+  }
 }
 .sales__container--notif {
   position: absolute;
@@ -540,6 +625,10 @@ body {
 .sales__container--item-content-stars svg:first-child {
   fill: #fff;
 }
+.sales__container--item-content-image {
+  width: 20rem;
+  height: 20rem;
+}
 .sales__container--item-price {
   font-family: b-traffic-bold;
   font-size: 1.8rem;
@@ -568,6 +657,7 @@ body {
   border-radius: 0.4rem;
   border: none;
   font-family: iransans-bold;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 .sales__container--item-button svg {
@@ -756,6 +846,10 @@ body {
 .content__logos {
   align-self: center;
 }
+.content__logos img {
+  width: 11.5rem;
+  height: 11.5rem;
+}
 
 .copyright {
   width: 100%;
@@ -794,6 +888,7 @@ body {
   border: none;
   font-weight: 700;
   cursor: pointer;
+  font-size: 1.3rem;
 }
 
 .main-button-dark {
